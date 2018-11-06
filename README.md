@@ -1,9 +1,7 @@
 # Contenu du cours
-[Présentation](https://www.overleaf.com/read/dqnvmcdhyndq)
-
-[Séquence I](https://www.overleaf.com/read/hwdzkcdbbnfw)
-
-[Séquence II](https://www.overleaf.com/read/vvxbzprghvyt)
+* [Présentation](https://www.overleaf.com/read/dqnvmcdhyndq)
+* [Séquence I](https://www.overleaf.com/read/hwdzkcdbbnfw)
+* [Séquence II](https://www.overleaf.com/read/vvxbzprghvyt)
 
 [Séquence III](https://www.overleaf.com/read/jkdqbgsvrhpd)
 
