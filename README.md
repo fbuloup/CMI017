@@ -11,6 +11,6 @@
 # Solution des exercices
 
 # Examens
-* [CC 2015](https://www.overleaf.com/read/xsnwdfgwjptf)
+<!--* [CC 2015](https://www.overleaf.com/read/xsnwdfgwjptf)-->
 * [Examen 2016](https://www.overleaf.com/read/pbqsdrjjjbpt)
 * [Examen 2017](https://www.overleaf.com/read/yqvkxgmszcmq)
