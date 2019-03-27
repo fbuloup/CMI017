@@ -8,8 +8,6 @@
 * [Séquence VI](https://www.overleaf.com/read/hnbtzkgyzzfm)
 * [Séquence VII](https://www.overleaf.com/read/zswjyqkwtvwk)
 
-# Solution des exercices
-
 # Examens
 <!--* [CC 2015](https://www.overleaf.com/read/xsnwdfgwjptf)-->
 * [Examen 2016](https://www.overleaf.com/read/pbqsdrjjjbpt)
