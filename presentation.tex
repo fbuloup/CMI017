@@ -1,0 +1,153 @@
+\documentclass[a4paper,11pt]{beamer}
+\usepackage{etex}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pst-sigsys} 
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{pstricks-add} 
+\usepackage{ragged2e}
+\usepackage{graphicx}   
+\usepackage{ulem} 
+\usepackage{wasysym}
+\usepackage{matlab-prettifier}
+\usepackage{hyperref}
+\setbeamertemplate{navigation symbols}{}   
+  
+\usetheme{Darmstadt} 
+\setbeamertemplate{footline}{\insertframenumber/\inserttotalframenumber}
+\title{L3 - CMI017 : Signaux et Systèmes\\Présentation}
+\author{Frank BULOUP - frank.buloup@univ-amu.fr} 
+\institute{Aix Marseille Université\\Institut des Sciences du Mouvement}
+\date{}
+
+\setbeamertemplate{footline} 
+{  
+	\begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+      {\usebeamerfont{title in head/foot}\insertshorttitle} \hfill    
+      \insertframenumber / \inserttotalframenumber%
+    \end{beamercolorbox}%
+%     \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
+%     \end{beamercolorbox} 
+}
+ 
+\newcounter{exampleBlockCounter}
+\setcounter{exampleBlockCounter}{1} 
+  
+\begin{document} 
+
+
+\begin{frame}[plain] 
+	\titlepage 
+	\center{\includegraphics[scale=0.75]{images/by-nc-sa.eps}}
+	\vspace{1cm}
+	
+	\includegraphics[scale=0.6]{images/LogoAMU.png}\hspace*{2cm}
+	\includegraphics[scale=0.2]{images/LogoCNRS.eps}\hspace*{2cm}
+	\includegraphics[scale=0.1]{images/LogoISM.eps}
+\end{frame} 
+
+% \section{Présentation} 
+% \subsection{Programme}
+
+\begin{frame}[plain]
+\frametitle{Objectifs de cette formation}
+\center
+À l'issue de cette formation, vous serez capable de :
+\vspace{0.25cm}
+
+\begin{enumerate}
+  \item Décrire les concepts de signaux et systèmes
+ 		\begin{itemize}
+ 		  \item Distinguer les domaines \textit{\textbf{continu}} et
+ 		  \textit{\textbf{discret}}
+ 		  \item Expliquer le concept de système discret linéaire et invariant dans le
+ 		  temps (SDLIT)
+ 		\end{itemize}
+  \item Manipuler leurs représentations temporelle et fréquentielle
+  	    \begin{itemize}
+  	      \item Utiliser les équations aux différences et les diagrammes blocs
+  	      \item Décrire le concept de régime harmonique
+ 		  \item Utiliser la fonction de transfert système
+ 		\end{itemize}
+\end{enumerate}
+\begin{exampleblock}{Remarque importante}
+\center{Je suis à votre disposition sur RDV fixé par mail}
+\end{exampleblock}
+\end{frame}
+
+
+\begin{frame}[plain]
+\frametitle{Programme de cette formation sur 20 heures}
+\begin{enumerate}
+  \item Séquence I - 2 heures
+  \begin{itemize}
+    \item Concepts généraux de SIGNAL et de SYSTÈME
+    \item Représentations temporelles des SDLIT
+  \end{itemize}
+  \item Séquence II - 3 heures
+  \begin{itemize}
+    \item \textcolor{red}{\textbf{Rendre le travail maison sur feuille -
+    Correction}}
+    \item Représentation fréquentielle des signaux
+    \item Projet Programmation - 1h
+  \end{itemize}
+  \item Séquence III - 3 heures
+  \begin{itemize}
+    \item \textcolor{red}{\textbf{Rendre le travail maison sur feuille -
+    Correction}}
+    \item Opérateur $\mathcal{R}$ et fonction de transfert en $\mathcal{R}$
+    \item Systèmes non bouclé et bouclé
+    \item Projet Programmation - 1h
+  \end{itemize}
+  \item Séquence IV - 3 heures
+  \begin{itemize}
+    \item \textcolor{red}{\textbf{Rendre le travail maison sur feuille -
+    Correction}}
+    \item Convolution
+    \item La transformée en z
+    \item Fonction de transfert en z
+    \item Projet Programmation - 1h30 
+  \end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[plain]
+\frametitle{Programme de cette formation sur 20 heures}
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item Séquence V - 3 heures 
+  \begin{itemize}
+    \item \textcolor{red}{\textbf{Rendre le travail maison sur feuille -
+    Correction}}
+    \item Réponse en fréquence des systèmes
+    \item Projet Programmation - 1h30
+  \end{itemize}
+  \item Séquence VI - 3 heures
+  \begin{itemize}
+    \item \textcolor{red}{\textbf{Rendre le travail maison sur feuille -
+    Correction}}
+    \item TD sur la base des CC et CF des années précédentes
+    \item Projet Programmation - 1h30
+  \end{itemize}
+   \item Séquence VII - 3 heures
+  \begin{itemize}
+    \item \textcolor{red}{\textbf{CC - 1h - 1/4 de la note finale}}
+    \item Correction CC - 1h 
+    \item Bilan Projet Programmation - 1h
+  \end{itemize}
+   \item \textcolor{red}{\textbf{CF - 1h - 1/2 de la note finale}}
+\end{enumerate}
+\pause
+\begin{alertblock}{\textbf{Attention !} Travail maison = 1/4 de la note finale}
+\center{Travail maison non rendu le jour J = zéro}
+\end{alertblock}
+\pause
+\begin{alertblock}{\textbf{Et surtout : soyez actifs !}}
+\center{N'hésitez pas à poser des questions, à intervenir.}
+\end{alertblock}
+\end{frame}
+
+\end{document}
